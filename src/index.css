@@ -1,0 +1,199 @@
+@import "tailwindcss";
+
+@theme {
+  --font-headline-sm: "Plus Jakarta Sans", sans-serif;
+  --font-body-lg: "Inter", sans-serif;
+  --font-code-sm: "JetBrains Mono", monospace;
+  --font-label-md: "Plus Jakarta Sans", sans-serif;
+  --font-label-lg: "Plus Jakarta Sans", sans-serif;
+  --font-body-sm: "Inter", sans-serif;
+  --font-headline-lg-mobile: "Plus Jakarta Sans", sans-serif;
+  --font-headline-md: "Plus Jakarta Sans", sans-serif;
+  --font-display-hero: "Plus Jakarta Sans", sans-serif;
+  --font-body-md: "Inter", sans-serif;
+  --font-headline-lg: "Plus Jakarta Sans", sans-serif;
+  --font-display-hero-mobile: "Plus Jakarta Sans", sans-serif;
+
+  /* Approved Ice Blue + White Palette */
+  --color-background: #F5F9FF;
+  --color-surface: #FFFFFF;
+  --color-surface-bright: #FFFFFF;
+  --color-surface-container-lowest: #FFFFFF;
+  --color-surface-container-low: #F8FAFC;
+  --color-surface-container: #EFF6FF;
+  --color-surface-container-high: #E2E8F0;
+  --color-surface-container-highest: #DBEAFE;
+  
+  --color-primary: #2563EB;
+  --color-primary-container: #1D4ED8;
+  --color-primary-fixed: #DBEAFE;
+  --color-primary-fixed-dim: #BFDBFE;
+  --color-on-primary: #FFFFFF;
+  --color-on-primary-fixed: #1E3A8A;
+  --color-on-primary-fixed-variant: #1E40AF;
+  --color-on-primary-container: #EFF6FF;
+
+  --color-secondary: #0284C7;
+  --color-secondary-container: #38BDF8;
+  --color-secondary-fixed: #E0F2FE;
+  --color-secondary-fixed-dim: #BAE6FD;
+  --color-on-secondary: #FFFFFF;
+  --color-on-secondary-fixed: #0369A1;
+  --color-on-secondary-container: #0C4A6E;
+
+  --color-on-surface: #0F172A;
+  --color-on-background: #0F172A;
+  --color-on-surface-variant: #64748B;
+  --color-outline: #64748B;
+  --color-outline-variant: #E2E8F0;
+
+  --color-tertiary: #475569;
+  --color-tertiary-container: #64748B;
+  --color-inverse-surface: #0F172A;
+  --color-inverse-on-surface: #F8FAFC;
+  --color-error: #EF4444;
+  --color-on-error: #FFFFFF;
+}
+
+/* Material Symbols configuration */
+.material-symbols-outlined {
+  font-family: 'Material Symbols Outlined';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Typography Scale helper classes */
+.font-display-hero {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  letter-spacing: -0.03em;
+  font-weight: 800;
+}
+
+.text-display-hero {
+  font-size: 54px;
+  line-height: 62px;
+}
+
+.text-display-hero-mobile {
+  font-size: 34px;
+  line-height: 42px;
+}
+
+.font-headline-lg {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  letter-spacing: -0.02em;
+  font-weight: 700;
+}
+
+.text-headline-lg {
+  font-size: 36px;
+  line-height: 44px;
+}
+
+.text-headline-lg-mobile {
+  font-size: 28px;
+  line-height: 36px;
+  letter-spacing: -0.015em;
+}
+
+.font-headline-md {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  letter-spacing: -0.01em;
+  font-weight: 600;
+}
+
+.text-headline-md {
+  font-size: 22px;
+  line-height: 30px;
+}
+
+.font-headline-sm {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-weight: 600;
+}
+
+.text-headline-sm {
+  font-size: 18px;
+  line-height: 26px;
+}
+
+.font-body-lg {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+}
+
+.text-body-lg {
+  font-size: 18px;
+  line-height: 28px;
+}
+
+.font-body-md {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+}
+
+.text-body-md {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.font-body-sm {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+}
+
+.text-body-sm {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.font-label-lg {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+}
+
+.text-label-lg {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.font-label-md {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+
+.text-label-md {
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.font-code-sm {
+  font-family: 'JetBrains Mono', monospace;
+  font-weight: 500;
+}
+
+.text-code-sm {
+  font-size: 13px;
+  line-height: 18px;
+}
+
+/* Reduced motion preference */
+@media (prefers-reduced-motion: reduce) {
+  *, ::before, ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
